@@ -2,7 +2,7 @@
 			createCanvas(600,600);
 			background(200);
         }
-        function draw() {
+        function drawCircles() {
         	nostroke()
         	fill(255,255,255)
             circle(300,300,555)
