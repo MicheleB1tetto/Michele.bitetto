@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<body>
+  CIAO
+  <script type="text/javascript" src="static/js/p5/p5.js"></script>
+  <script type="text/javascript">
+      let width = 800
+      let height = 600
+
+  function setup() 
+  {
+    createCanvas(width, height);
+    background("#ffa500");
+  }
+
+  function draw() 
+  {
+    let x = random(0, width)
+    let y = random(0, height)
+    let diameter = random(30, 90)
+
+    let red = random(0, 255)
+    let green = random(0, 255)
+    let blue = random(0,255)
+    let alpha = random(0,255)
+
+
+    circle(x, y, diameter)
+    strokeWeight(1)
+    fill(red, green, blue ,alpha)
+  }
+  </script>
+
+</body>
+</html>
